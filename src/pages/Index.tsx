@@ -67,9 +67,8 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-6 text-center overflow-hidden">
       <div
-        className={`transition-all duration-[1.5s] ease-out ${
-          show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-        }`}
+        className={`transition-all duration-[1.5s] ease-out ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
       >
         <p className="font-script text-2xl md:text-3xl text-primary mb-4">Happy Valentine's Day</p>
         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-tight">
@@ -117,13 +116,13 @@ const LoveLetterSection = () => (
   </section>
 );
 
-const photoPlaceholders = [
-  { id: 1, label: "Our first date" },
-  { id: 2, label: "That perfect sunset" },
-  { id: 3, label: "Laughing together" },
-  { id: 4, label: "Adventures with you" },
-  { id: 5, label: "My favorite smile" },
-  { id: 6, label: "Us being us" },
+const photos = [
+  { id: 1, src: "/1.jpg", label: "Our first date" },
+  { id: 2, src: "/2.jpg", label: "That perfect sunset" },
+  { id: 3, src: "/3.jpg", label: "Laughing together" },
+  { id: 4, src: "/4.jpg", label: "Adventures with you" },
+  { id: 5, src: "/5.jpg", label: "My favorite smile" },
+  { id: 6, src: "/6.jpg", label: "Us being us" },
 ];
 
 const PhotoGallerySection = () => (
@@ -134,23 +133,23 @@ const PhotoGallerySection = () => (
         <p className="font-body text-muted-foreground">Every picture tells our story</p>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-        {photoPlaceholders.map((photo, i) => (
+        {photos.map((photo, i) => (
           <div
             key={photo.id}
             className={`reveal reveal-delay-${(i % 3) + 1} group relative aspect-square rounded-xl overflow-hidden bg-secondary border border-border cursor-pointer transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl`}
           >
-            <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-              <span className="text-4xl mb-3 text-primary/40 group-hover:text-primary/60 transition-colors">📷</span>
-              <p className="font-body text-sm text-muted-foreground group-hover:text-foreground transition-colors">
-                {photo.label}
-              </p>
-            </div>
+            <img
+              src={photo.src}
+              alt={photo.label}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <p className="absolute bottom-0 left-0 right-0 p-3 font-body text-sm text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+              {photo.label}
+            </p>
           </div>
         ))}
       </div>
-      <p className="reveal text-center text-sm text-muted-foreground mt-8 font-body italic">
-        Upload your photos in chat to fill this gallery ♥
-      </p>
     </div>
   </section>
 );
