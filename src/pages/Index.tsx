@@ -72,7 +72,7 @@ const HeroSection = () => {
       >
         <p className="font-script text-2xl md:text-3xl text-primary mb-4">Happy Valentine's Day</p>
         <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-tight">
-          To My <span className="text-primary italic">Love</span>
+          My Dearest <span className="text-primary italic">Keysya</span>
         </h1>
         <p className="font-body text-lg md:text-xl text-muted-foreground max-w-md mx-auto">
           It feels like it has been forever, through thick and thin, cries and tears.
