@@ -75,7 +75,7 @@ const HeroSection = () => {
           To My <span className="text-primary italic">Love</span>
         </h1>
         <p className="font-body text-lg md:text-xl text-muted-foreground max-w-md mx-auto">
-          Every moment with you is a gift I'll cherish forever
+          It feels like it has been forever, through thick and thin, cries and tears.
         </p>
         <div className="mt-10 animate-bounce">
           <span className="text-primary text-2xl">↓</span>
@@ -90,26 +90,28 @@ const LoveLetterSection = () => (
     <div className="reveal max-w-2xl w-full">
       <div className="bg-card border border-border rounded-2xl p-8 md:p-12 shadow-lg relative">
         <div className="absolute -top-4 left-1/2 -translate-x-1/2 text-primary text-3xl">♥</div>
-        <p className="font-script text-xl md:text-2xl text-primary mb-6">My Dearest,</p>
+        <p className="font-script text-xl md:text-2xl text-primary mb-6">Hi, I made this just for you.</p>
         <div className="font-body text-foreground/90 space-y-4 leading-relaxed text-base md:text-lg">
           <p>
-            From the moment you walked into my life, everything changed.
-            You brought colors to my world that I never knew existed,
-            and a warmth that fills every corner of my heart.
+            It feels like forever since we first met. I still remember the first time
+            I saw you on an Instagram post, so stunning, as always until now, that you
+            immediately caught my attention. Ever since then, you've stayed in my mind.
           </p>
           <p>
-            Every day with you is an adventure, every laugh we share is a treasure,
-            and every quiet moment together reminds me how lucky I am
-            to have found my person in you.
+            Thank you for existing, for staying, and for being around me.
+            You genuinely make me feel calm and at ease.
           </p>
           <p>
-            Thank you for being my best friend, my partner, my everything.
-            I love you more than words could ever express — but I'll never
-            stop trying.
+            I truly love you. I really do. But there were times when I hurt you
+            and made you suffer, and I regret that deeply. It was never my intention.
+            I hope we can grow, heal together.
+          </p>
+          <p>
+            Happy Valentine, Keysya ❤️
           </p>
         </div>
         <p className="font-script text-xl text-primary mt-8 text-right">
-          Forever yours ♥
+          Yours, sincerely. ♥
         </p>
       </div>
     </div>
