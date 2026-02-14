@@ -159,19 +159,8 @@ const PhotoGallerySection = () => (
 const FooterSection = () => (
   <section className="relative py-20 md:py-32 px-6 text-center">
     <div className="reveal max-w-lg mx-auto">
-      <p className="font-body text-muted-foreground mb-6">
+      <p className="font-body text-muted-foreground">
         Thank you for seeing it up till this bottom, this one is really made with love
-      </p>
-      <p className="font-script text-3xl md:text-4xl text-primary mb-6">
-        You are my today and all of my tomorrows
-      </p>
-      <div className="flex justify-center gap-2 text-primary text-2xl mb-8">
-        <span>♥</span>
-        <span className="animate-pulse">♥</span>
-        <span>♥</span>
-      </div>
-      <p className="font-body text-sm text-muted-foreground">
-        Made with ❤️ just for you
       </p>
     </div>
   </section>
