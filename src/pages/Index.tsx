@@ -117,12 +117,12 @@ const LoveLetterSection = () => (
 );
 
 const photos = [
-  { id: 1, src: "/1.jpg", label: "Our first date" },
-  { id: 2, src: "/2.jpg", label: "That perfect sunset" },
-  { id: 3, src: "/3.jpg", label: "Laughing together" },
-  { id: 4, src: "/4.jpg", label: "Adventures with you" },
-  { id: 5, src: "/5.jpg", label: "My favorite smile" },
-  { id: 6, src: "/6.jpg", label: "Us being us" },
+  { id: 1, src: "/1.jpg", label: "The moment you were become my girl" },
+  { id: 2, src: "/2.jpg", label: "Very first time when i met you at your place" },
+  { id: 3, src: "/3.jpg", label: "The moment we had a kiss on a photobooth (it cannot be displayed)" },
+  { id: 4, src: "/4.jpg", label: "Last picture we took" },
+  { id: 5, src: "/5.jpg", label: "We are having working hour at that time" },
+  { id: 6, src: "/6.jpg", label: "MALIKAA" },
 ];
 
 const PhotoGallerySection = () => (
